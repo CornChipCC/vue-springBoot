@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>{{user.name}} : {{user.phone}}</h1>
+        <h2>나이 : {{user.age}}</h2>
     </div>
 </template>
 

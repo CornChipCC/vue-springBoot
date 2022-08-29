@@ -20,9 +20,9 @@ public class UserController{
         ResponseVO<List<UserVO>> resp = new ResponseVO<>();
 
         List<UserVO> list = new ArrayList<>();
-        list.add(new UserVO("테스트", "010-1234-1234"));
-        list.add(new UserVO("테스터", "010-5678-3434"));
-        list.add(new UserVO("TEST", "010-1212-1111"));
+        list.add(new UserVO("테스트", "010-1234-1234", 36));
+        list.add(new UserVO("테스터", "010-5678-3434",12));
+        list.add(new UserVO("TEST", "010-1212-1111",13));
 
         resp.setResponse(list);
         return resp;
@@ -34,9 +34,9 @@ public class UserController{
 
         List<UserVO> list = new ArrayList<>();
 
-        list.add(new UserVO("테스트", "010-1234-1234"));
-        list.add(new UserVO("테스터", "010-5678-3434"));
-        list.add(new UserVO("TEST", "010-1212-1111"));
+        list.add(new UserVO("테스트", "010-1234-1234",36));
+        list.add(new UserVO("테스터", "010-5678-3434",12));
+        list.add(new UserVO("TEST", "010-1212-1111",13));
 
         resp.setResponse(list.get(id));
         return resp;

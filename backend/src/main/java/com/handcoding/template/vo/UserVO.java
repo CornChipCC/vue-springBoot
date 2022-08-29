@@ -7,12 +7,14 @@ public class UserVO {
 
     private String name;
     private String phone;
+    private int age;
 
     public UserVO(){}
-    public UserVO(String name, String phone) {
+    public UserVO(String name, String phone, int age) {
         super();
         this.name = name;
         this.phone = phone;
+        this.age = age;
     }
 
 }

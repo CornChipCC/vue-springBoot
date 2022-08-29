@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <h3 v-for="(user, index) in users" :key="user.id">
-      <router-link :to="{ name: 'DetailUser', params: { id: index}}"> {{user.name}} : {{user.phone}} </router-link>
+      <router-link :to="{ name: 'DetailUser', params: { id: index}}"> {{user.name}} : {{user.phone}} <br>나이 : {{user.age}}</router-link>
     </h3>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'Dongmin Vue',
       users: []
     }
   },
